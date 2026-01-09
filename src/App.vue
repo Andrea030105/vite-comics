@@ -1,13 +1,11 @@
-<script>
-export default {
-  
-}
+<script setup>
+import AppHeader from './components/AppHeader.vue'
 </script>
-<template lang="">
+<template>
   <div>
-    
+    <AppHeader/>
   </div>
 </template>
-<style lang="">
-  
+<style lang="scss">
+  @use './styles/generals.scss' as *;
 </style>
