@@ -4,9 +4,16 @@ export default {
 }
 </script>
 <template>
-    <div>
-        caio
-    </div>
+    <header class="container">
+        <div class="row">
+            <div class="col-6">
+                ciao
+            </div>
+            <div class="col-6">
+                ciao
+            </div>
+        </div>
+    </header>
 </template>
 <style lang="scss">
     
