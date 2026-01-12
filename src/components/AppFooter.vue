@@ -146,7 +146,7 @@ export default {
 .link-section {
     background-image: url('../assets/images/dc-logo-bg.png'), url('../assets/images/footer-bg.jpg');
     background-position:
-        right center,
+        calc(100% - 10%) center,
         top left;
     background-repeat:
         no-repeat,
