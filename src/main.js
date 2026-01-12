@@ -1,11 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+//Importa google font
+import "@fontsource/roboto";
+
 // Importa CSS di Bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Importa JavaScript di Bootstrap (opzionale, solo se usi componenti interattivi)
-import * as bootstrap from 'bootstrap/dist/js/bootstrap.bundle'
+import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 
-const app = createApp(App)
-app.provide('bootstrap', bootstrap)
-app.mount('#app')
+const app = createApp(App);
+app.provide("bootstrap", bootstrap);
+app.mount("#app");
