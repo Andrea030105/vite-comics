@@ -83,7 +83,6 @@ header {
 }
 
 .menu-list {
-    list-style-type: none;
     margin: 0;
 
     li {
@@ -96,7 +95,6 @@ header {
         flex-direction: column;
 
         a {
-            text-decoration: none;
             color: #000;
             margin-bottom: .5rem;
 

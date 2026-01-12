@@ -8,25 +8,19 @@ export default {
 }
 </script>
 <template>
-    <div class="container-fluid p-0">
+    <div class="container-jumbotron">
+        <img src="../assets/images/jumbotron.jpg" alt="jumbotron">
+    </div>
+    <div class="current-series d-flex align-items-center justify-content-center">
+        current series
+    </div>
+    <section class="bg-black">
         <div class="row">
             <div class="col-12">
-                <div class="container-jumbotron">
-                    <img src="../assets/images/jumbotron.jpg" alt="jumbotron">
-                </div>
-                <div class="current-series d-flex align-items-center justify-content-center">
-                    current series
-                </div>
+                <div></div>
             </div>
         </div>
-        <section class="bg-black">
-            <div class="row">
-                <div class="col-12">
-                    <div></div>
-                </div>
-            </div>
-        </section>
-    </div>
+    </section>
 </template>
 <style lang="scss">
 @use '../styles/partial/variables' as *;
