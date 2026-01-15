@@ -125,6 +125,31 @@ export default {
             </div>
         </div>
     </section>
+    <section class="bg-light-black p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-sign-up">
+                        sign-up now!
+                    </button>
+                </div>
+                <div class="col-6">
+                    <div class="container-follow">
+                        <h4>
+                            Follow us
+                        </h4>
+                        <div class="icon-follow">
+                            <img src="../assets/images/footer-facebook.png" alt="facebook">
+                            <img src="../assets/images/footer-twitter.png" alt="twitter">
+                            <img src="../assets/images/footer-youtube.png" alt="youtube">
+                            <img src="../assets/images/footer-pinterest.png" alt="pinterest">
+                            <img src="../assets/images/footer-periscope.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 <style lang="scss">
 @use '../styles/partial/variables' as *;
@@ -169,5 +194,44 @@ export default {
         }
     }
 
+}
+
+.btn-sign-up {
+    color: $whiteCl;
+    background-color: $lightBlack;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 2px solid $primaryCl;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primaryCl;
+    }
+}
+
+.container-follow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h4 {
+        color: $primaryCl;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0;
+        margin-left: 10rem;
+        font-size: 1rem;
+    }
+
+    .icon-follow {
+        img {
+            margin-right: 1rem;
+            width: 2rem
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 </style>

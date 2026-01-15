@@ -8,11 +8,15 @@
 }
 
 .bg-black {
-  background-color: #000;
+  background-color: $black;
 }
 
 .bg-primary {
   background-color: $primaryCl;
+}
+
+.bg-light-black {
+  background-color: $lightBlack;
 }
 
 a {
