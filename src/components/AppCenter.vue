@@ -1,8 +1,13 @@
 <script>
+import Card from './Card.vue'
+import dataFileCard from '../assets/dataFile/dataFileCard'
 export default {
+    components: {
+        Card,
+    },
     data() {
         return {
-
+            fileCard: dataFileCard,
         }
     },
 }
@@ -14,10 +19,21 @@ export default {
     <div class="current-series d-flex align-items-center justify-content-center">
         current series
     </div>
-    <section class="bg-black">
+    <section class="bg-black py-5">
         <div class="row">
             <div class="col-12">
-                <div></div>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <Card v-for="(items, index) in fileCard" :key="index" :dataCard="items" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center mt-5">
+                    <button class="btn-load-more">
+                        load more
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -51,7 +67,16 @@ export default {
     left: 70px;
 }
 
-.bg-black {
-    height: 10rem;
+.btn-load-more {
+    color: $whiteCl;
+    background-color: $primaryCl;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 2px solid $primaryCl;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $lightBlack;
+    }
 }
 </style>
