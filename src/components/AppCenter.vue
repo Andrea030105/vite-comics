@@ -20,14 +20,14 @@ export default {
         current series
     </div>
     <section class="bg-black py-5">
-        <div class="row">
+        <div class="row g-0">
             <div class="col-12">
                 <div class="d-flex flex-wrap justify-content-center">
                     <Card v-for="(items, index) in fileCard" :key="index" :dataCard="items" />
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row g-0">
             <div class="col-12">
                 <div class="d-flex justify-content-center mt-5">
                     <button class="btn-load-more">
